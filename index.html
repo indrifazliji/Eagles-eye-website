@@ -5,28 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagles Eye - Firearm Detection App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Eagles Eye</h1>
-        <p>Connect your cameras, track objects, and detect firearms in real-time.</p>
-        <a href="#features" class="cta-button">Learn More</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Eagles Eye</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Live Demo</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Stay Protected with <span>Eagles Eye</span></h1>
+        <p>Connect your cameras, track objects, and detect firearms with advanced real-time alerts.</p>
+        <a href="#features" class="cta-button">Explore Features</a>
     </header>
 
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Eagles Eye</h2>
+        <p>We provide a cutting-edge security solution, helping businesses and individuals monitor their premises using advanced camera technology to detect firearms and ensure safety.</p>
+    </section>
+
+    <!-- Features Section -->
     <section id="features">
-        <h2>Our Features</h2>
+        <h2>Key Features</h2>
         <div class="feature">
             <h3>Real-time Firearm Detection</h3>
-            <p>Monitor your cameras and get real-time alerts when a firearm is detected.</p>
+            <p>Our technology detects firearms instantly and notifies you in real-time to help prevent incidents before they happen.</p>
         </div>
         <div class="feature">
             <h3>Multi-Camera Support</h3>
-            <p>Connect multiple cameras and monitor various locations simultaneously.</p>
+            <p>Connect multiple cameras to monitor various locations from a single dashboard, allowing comprehensive security coverage.</p>
+        </div>
+        <div class="feature">
+            <h3>Live Alerts</h3>
+            <p>Receive immediate alerts on your mobile device whenever suspicious activity is detected in your camera feeds.</p>
         </div>
     </section>
 
+    <!-- Live Demo Section -->
+    <section id="demo">
+        <h2>Live Demo</h2>
+        <p>See how Eagles Eye works in action by watching the live camera feed detecting objects and firearms.</p>
+        <div class="demo-video">
+            <iframe src="https://www.youtube.com/embed/sample-video" title="Eagles Eye Demo" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you want to learn more or get a demo, feel free to reach out!</p>
+        <form action="mailto:info@eagleseye.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Eagles Eye | Contact Us: <a href="mailto:info@eagleseye.com">info@eagleseye.com</a></p>
+        <p>&copy; 2024 Eagles Eye. All rights reserved.</p>
     </footer>
 </body>
 </html>
