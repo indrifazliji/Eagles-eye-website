@@ -47,6 +47,7 @@ nav {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -54,7 +55,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('background.jpg');
+    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e'); /* Example image */
     background-size: cover;
     background-position: center;
     position: relative;
