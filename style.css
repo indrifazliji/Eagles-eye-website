@@ -47,7 +47,6 @@ nav {
 }
 
 /* Hero Section */
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -55,7 +54,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e'); /* Example image */
+    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e'); /* Example background */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -131,8 +130,8 @@ nav {
     transform: scale(1.05);
 }
 
-.feature-card i {
-    font-size: 3em;
+.feature-card img {
+    width: 100px;
     margin-bottom: 15px;
 }
 
@@ -198,25 +197,4 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: #e74c3c;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 0.9em;
-}
-
-/* Animations */
-@keyframes slideInLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes buttonBounce {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
 }
