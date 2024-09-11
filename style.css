@@ -8,7 +8,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Navigation Bar */
+/* Responsive Navigation */
 nav {
     background-color: #e74c3c;
     padding: 20px;
@@ -64,11 +64,6 @@ nav {
 .hero h1 {
     font-size: 3.5em;
     margin: 0;
-    animation: slideInLeft 2s ease-in-out;
-}
-
-.hero span {
-    color: #e74c3c;
 }
 
 .cta-button {
@@ -80,7 +75,6 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: buttonBounce 3s infinite;
 }
 
 .cta-button:hover {
@@ -89,6 +83,12 @@ nav {
 }
 
 /* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .feature-card {
     background-color: #333;
     padding: 20px;
@@ -102,32 +102,63 @@ nav {
     transform: scale(1.05);
 }
 
-/* Animations */
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+/* Contact Section */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #111;
+    color: white;
+    font-size: 1em;
 }
 
-@keyframes buttonBounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Responsive Styles */
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .hero h1 {
         font-size: 2em;
     }
+
     .cta-button {
         font-size: 1em;
         padding: 10px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .feature-card {
+        padding: 15px;
     }
 }
