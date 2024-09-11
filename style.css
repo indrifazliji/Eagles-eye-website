@@ -82,19 +82,7 @@ nav {
 .hero h1 {
     font-size: 4em;
     margin: 0;
-    animation: fadeIn 2s ease-in-out, textGlow 3s ease-in-out infinite;
-}
-
-@keyframes textGlow {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    }
-    50% {
-        text-shadow: 0 0 15px rgba(231, 76, 60, 1), 0 0 20px rgba(231, 76, 60, 0.8);
-    }
-    100% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    }
+    animation: fadeIn 2s ease-in-out;
 }
 
 .cta-button {
