@@ -54,7 +54,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e'); /* Example background */
+    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -69,12 +69,6 @@ nav {
 
 .hero span {
     color: #e74c3c;
-}
-
-.sub-text {
-    font-size: 1.5em;
-    margin: 20px 0;
-    animation: fadeInUp 3s ease-in-out;
 }
 
 .cta-button {
@@ -94,29 +88,7 @@ nav {
     transform: scale(1.1);
 }
 
-/* About Section */
-#about {
-    padding: 80px 20px;
-    background-color: #111;
-    color: white;
-    text-align: center;
-}
-
 /* Features Section */
-#features {
-    padding: 80px 20px;
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px;
-}
-
 .feature-card {
     background-color: #333;
     padding: 20px;
@@ -130,71 +102,7 @@ nav {
     transform: scale(1.05);
 }
 
-.feature-card img {
-    width: 100px;
-    margin-bottom: 15px;
-}
-
-/* Live Demo Section */
-#demo {
-    padding: 80px 20px;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-}
-
-.demo-video iframe {
-    width: 80%;
-    height: 400px;
-    border: none;
-}
-
-/* Contact Section */
-#contact {
-    padding: 80px 20px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #111;
-    color: white;
-    font-size: 1em;
-}
-
-form button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #c0392b;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-}
-
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-/* Keyframes for Animations */
+/* Animations */
 @keyframes slideInLeft {
     from {
         transform: translateX(-100%);
@@ -204,22 +112,22 @@ footer {
     }
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes buttonBounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-5px);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
     }
 }
