@@ -114,18 +114,21 @@ section {
     padding: 80px 20px;
     background-color: #111;
     text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popup 1s forwards;
 }
 
-.grid-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #e74c3c;
-}
-
-.grid-section p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #ccc;
+/* Popup animation */
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Footer */
