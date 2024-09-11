@@ -42,27 +42,12 @@ nav {
     padding: 10px;
     font-size: 1.1em;
     position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s ease;
+    transition: transform 0.5s, color 0.5s ease;
 }
 
 .nav-links li a:hover {
     color: #e74c3c;
-    transform: translateY(-3px);
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
+    transform: scale(1.1);
 }
 
 /* Hero Section */
@@ -92,15 +77,13 @@ nav {
     font-size: 1.2em;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    animation: buttonBounce 3s infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #c0392b;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(231, 76, 60, 0.7);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.7);
 }
 
 /* Features Section */
@@ -138,11 +121,11 @@ nav {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);
 }
 
-/* Contact Section */
+/* Grid Sections */
 .grid-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+    transition: opacity 1s ease-in-out;
     padding: 80px 20px;
     background-color: #111;
     text-align: center;
