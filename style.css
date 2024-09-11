@@ -64,7 +64,6 @@ nav {
 .hero h1 {
     font-size: 4em;
     margin: 0;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .cta-button {
@@ -114,21 +113,44 @@ section {
     padding: 80px 20px;
     background-color: #111;
     text-align: center;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: popup 1s forwards;
 }
 
-/* Popup animation */
-@keyframes popup {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.grid-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.grid-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #e74c3c;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c0392b;
 }
 
 /* Footer */
