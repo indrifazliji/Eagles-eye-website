@@ -6,7 +6,6 @@
     <title>Eagles Eye - Stay Protected</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -20,11 +19,11 @@
         </ul>
     </nav>
 
-    <!-- Hero Section with Gradient and Parallax Background -->
-    <header class="hero parallax">
-        <div class="hero-content" data-aos="fade-up">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
             <h1>Stay Safe, Stay Secure with <span class="highlight">Eagles Eye</span></h1>
-            <p>Experience cutting-edge AI technology that instantly detects threats, providing you with real-time protection. From firearm detection to multi-camera monitoring, Eagles Eye offers seamless security solutions for both individuals and businesses.</p>
+            <p>Experience cutting-edge AI technology that instantly detects threats, providing you with real-time protection.</p>
             <a href="#features" class="cta-button">Explore Features</a>
         </div>
     </header>
@@ -32,28 +31,23 @@
     <!-- About Section -->
     <section id="about" class="grid-section">
         <h2>About Eagles Eye</h2>
-        <p>Eagles Eye is at the forefront of security technology, offering advanced AI solutions that empower individuals, businesses, and institutions to monitor their premises in real time. Our platform is built with the latest in machine learning, allowing for firearm detection, multi-camera monitoring, and instant alerts that protect you and your loved ones. Whether you are managing security for a small business or a large-scale operation, Eagles Eye gives you peace of mind, ensuring you are always one step ahead of potential threats.</p>
-        <p>We are dedicated to making the world safer through technology. Our tools are designed with simplicity, efficiency, and reliability in mind, ensuring that everyone, regardless of technical expertise, can use our systems. With Eagles Eye, you can trust that your security is in capable hands.</p>
+        <p>Eagles Eye is at the forefront of security technology, offering advanced AI solutions that empower individuals, businesses, and institutions to monitor their premises in real time.</p>
+        <p>Our tools are designed with simplicity, efficiency, and reliability in mind, ensuring that everyone can use our systems.</p>
     </section>
 
     <!-- Features Section -->
-    <section id="features" data-aos="fade-up">
+    <section id="features" class="grid-section">
         <h2>Our Revolutionary Features</h2>
         <div class="features-grid">
-            <div class="feature-card" data-aos="zoom-in">
+            <div class="feature-card">
                 <img src="https://cdn.pixabay.com/photo/2016/10/10/12/20/cctv-1734442_1280.png" alt="Firearm Detection">
                 <h3>Real-time Firearm Detection</h3>
-                <p>Leverage AI-powered security systems that instantly detect firearms, sending real-time alerts to ensure you’re always one step ahead of potential threats.</p>
+                <p>Leverage AI-powered security systems that instantly detect firearms.</p>
             </div>
-            <div class="feature-card" data-aos="zoom-in">
+            <div class="feature-card">
                 <img src="https://cdn.pixabay.com/photo/2016/11/22/19/14/video-1850276_1280.png" alt="Camera Monitoring">
                 <h3>Multi-Camera Monitoring</h3>
-                <p>Monitor multiple locations with ease. Our platform integrates seamlessly with various camera systems, allowing you to manage all feeds from one dashboard.</p>
-            </div>
-            <div class="feature-card" data-aos="zoom-in">
-                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/cctv-1573639_1280.jpg" alt="Live Alerts">
-                <h3>Instant Notifications</h3>
-                <p>Stay updated at all times with real-time notifications that alert you of any suspicious activity or firearm detection within seconds.</p>
+                <p>Monitor multiple locations with ease.</p>
             </div>
         </div>
     </section>
@@ -61,9 +55,8 @@
     <!-- Contact Section -->
     <section id="contact" class="grid-section">
         <h2>Contact Us Today for Unmatched Security</h2>
-        <p>If you’re interested in learning more about Eagles Eye’s state-of-the-art security solutions or want a demonstration of our real-time firearm detection and multi-camera monitoring systems, don’t hesitate to reach out. Whether you’re a business owner looking to enhance your security infrastructure, a homeowner aiming for peace of mind, or an organization seeking large-scale surveillance solutions, we are here to help.</p>
-        <p>Our team of experts is ready to answer any questions and provide tailored security solutions that meet your unique needs. Let us help you safeguard what matters most.</p>
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <p>If you’re interested in learning more about Eagles Eye, don’t hesitate to reach out.</p>
+        <form action="mailto:youremail@example.com" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -74,22 +67,9 @@
     <!-- Footer -->
     <footer>
         <p>© 2024 Eagles Eye. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="#"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/01/icon-2935404_1280.png" alt="Facebook"></a>
-            <a href="#"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/01/icon-2935404_1280.png" alt="Twitter"></a>
-            <a href="#"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/01/icon-2935404_1280.png" alt="Instagram"></a>
-        </div>
     </footer>
 
-    <!-- AOS and Parallax JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
-    <script>
-        var rellax = new Rellax('.parallax');
-    </script>
+    <!-- Scroll and Animation JS -->
     <script src="script.js"></script>
 </body>
 </html>
