@@ -8,7 +8,7 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Responsive Navigation */
+/* Navigation Bar */
 nav {
     background-color: #e74c3c;
     padding: 20px;
@@ -39,22 +39,33 @@ nav {
     text-decoration: none;
     padding: 10px;
     font-size: 1.1em;
+    position: relative;
     transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-    color: #000;
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
 }
 
-/* Hero Section */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section with Gradient */
 .hero {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e');
+    background: linear-gradient(to right, rgba(231, 76, 60, 0.8), rgba(52, 152, 219, 0.8)), url('https://images.unsplash.com/photo-1603544413415-e5e16c56141e');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -74,91 +85,11 @@ nav {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: buttonBounce 3s infinite;
 }
 
 .cta-button:hover {
     background-color: #c0392b;
     transform: scale(1.1);
-}
-
-/* Features Section */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.feature-card {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.feature-card:hover {
-    background-color: #e74c3c;
-    transform: scale(1.05);
-}
-
-/* Contact Section */
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #111;
-    color: white;
-    font-size: 1em;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-}
-
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    nav {
-        padding: 10px;
-    }
-
-    .logo {
-        font-size: 1.5em;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-
-    .feature-card {
-        padding: 15px;
-    }
-}
+    box-shadow: 0 0 10px rgba(231, 76, 60
