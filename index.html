@@ -6,7 +6,6 @@
     <title>Eagles Eye - Stay Protected</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- AOS Animation library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
@@ -21,8 +20,17 @@
         </ul>
     </nav>
 
-    <!-- Hero Section with Parallax Background -->
-    <header class="hero parallax" data-rellax-speed="-2">
+    <!-- Moving Lines Background -->
+    <div class="moving-lines">
+        <div class="line" style="left: 10%;"></div>
+        <div class="line" style="left: 30%;"></div>
+        <div class="line" style="left: 50%;"></div>
+        <div class="line" style="left: 70%;"></div>
+        <div class="line" style="left: 90%;"></div>
+    </div>
+
+    <!-- Hero Section with Gradient and Parallax Background -->
+    <header class="hero parallax">
         <div class="hero-content" data-aos="fade-up">
             <h1>Stay Protected with <span class="highlight">Eagles Eye</span></h1>
             <p>Real-time firearm detection at your fingertips.</p>
@@ -30,13 +38,13 @@
         </div>
     </header>
 
-    <!-- About Section with AOS animations -->
+    <!-- About Section -->
     <section id="about" data-aos="fade-up">
         <h2>About Eagles Eye</h2>
         <p>We provide cutting-edge security solutions that allow individuals and businesses to track and detect firearms using advanced AI and real-time alerts.</p>
     </section>
 
-    <!-- Features Section with AOS animations -->
+    <!-- Features Section -->
     <section id="features" data-aos="fade-up">
         <h2>Our Key Features</h2>
         <div class="features-grid">
@@ -87,10 +95,13 @@
         </div>
     </footer>
 
-    <!-- AOS library script -->
+    <!-- AOS and Parallax JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+    <script>
         var rellax = new Rellax('.parallax');
     </script>
     <script src="script.js"></script>
