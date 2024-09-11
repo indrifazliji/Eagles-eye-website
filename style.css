@@ -82,7 +82,19 @@ nav {
 .hero h1 {
     font-size: 4em;
     margin: 0;
-    animation: slideInLeft 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out, textGlow 3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(231, 76, 60, 1), 0 0 20px rgba(231, 76, 60, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
 }
 
 .cta-button {
@@ -117,6 +129,19 @@ nav {
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .feature-card:hover {
@@ -170,12 +195,12 @@ footer {
 }
 
 /* Keyframes for Animations */
-@keyframes slideInLeft {
+@keyframes fadeIn {
     from {
-        transform: translateX(-100%);
+        opacity: 0;
     }
     to {
-        transform: translateX(0);
+        opacity: 1;
     }
 }
 
